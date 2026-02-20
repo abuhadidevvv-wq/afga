@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body style="background:#000; color:#0f0; font-family:monospace;">
+    <h1>ABU HADI PS5 DUMPER v1.0</h1>
+    <div id="status">READY: WAITING FOR EXPLOIT TRIGGER...</div>
+    <button onclick="trigger()" style="padding:20px;">START SYSTEM EXTRACTION</button>
+
+    <script>
+        function trigger() {
+            document.getElementById('status').innerText = "INJECTING KERNEL PAYLOAD...";
+            
+            // هنا يتم استدعاء ثغرة الـ Webkit (مثل ثغرة الـ IPv6 الشهيرة)
+            // الثغرة تقوم برفع الـ Payload (المكون الثاني) لداخل النظام
+            
+            setTimeout(() => {
+                document.getElementById('status').innerText = "DUMPING SYSTEM TO PC...";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
